@@ -1,0 +1,156 @@
+/* 全体レイアウト */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    max-width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* ヘッダ */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    height: 30px; /* 固定高さ */
+    width: 100vw;
+    flex-shrink: 0;
+}
+h1 {
+    font-size: 18px;
+}
+
+/* フッタ */
+.footer {
+    background-color: #f1f1f1;
+    color: #555;
+    padding: 2px;
+    text-align: center;
+    font-size: 11px;
+    height: 20px; /* 固定高さ */
+    width: 100vw;
+    flex-shrink: 0;
+}
+a {
+    margin: 5px;
+}
+
+/* メインコンテンツ */
+.main-content {
+    display: flex;
+    flex: 1; /* 残りの高さを占める */
+    gap: 10px;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden; /* 縦スクロールを防止 */
+}
+h2 {
+  font-size: 14px;
+  margin-bottom: 0px;  
+}
+
+
+
+/*
+    -------------------------------------------------------
+    入力セクション全体 
+*/
+
+/* 入力セクション全体 */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* 職業 */
+#job-select-container {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px; /* ラベルとセレクトボックスの間隔 */
+}
+
+#jobSelect {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+/* 入力欄グリッド */
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  gap: 5px 10px; /* 各ペア間の間隔 */
+}
+
+/* 入力ペア（ラベル＋入力ボックス） */
+.input-pair {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ラベルと入力欄の間隔 */
+}
+
+.input-pair label {
+  font-size: 14px;
+  color: #666;
+  width: 40px; /* ラベルの固定幅 */
+  text-align: right;
+}
+
+.input-pair input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 14px;
+  width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 残ポイント */
+.remaining-points {
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+}
+
+.remaining-points.negative {
+  color: red; /* マイナス時は赤表示 */
+}
+
+
+/*
+    -------------------------------------------------------
+    表示エリア全体 
+*/
+
+.output-section {
+flex: 1;
+padding-top: 5px;
+padding-left: 15px;
+border-left: 1px solid #ddd; /* 視覚的な区切り線 */
+overflow: auto; /* 必要に応じてスクロール */
+}
+
+/* レスポンシブ対応 デバイス横幅660px以下の場合 */
+@media (max-width: 660px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .output-section {
+    border-left: none;
+    border-top: 1px solid #ddd;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}

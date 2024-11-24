@@ -1,0 +1,90 @@
+{
+    "skills": [
+        {
+            "id": "STRONG_ATTACK",
+            "name": "強攻撃",
+            "maxlv": 1,
+            "dependencies": []
+        },
+        {
+            "id": "FIRST_AID",
+            "name": "応急手当",
+            "maxlv": 1,
+            "dependencies": []
+        },
+        {
+            "id": "FEIGNING_DEAD",
+            "name": "死んだふり",
+            "maxlv": 5,
+            "dependencies": []
+        },
+        {
+            "id": "HEAL",
+            "name": "ヒール",
+            "maxlv": 10,
+            "dependencies": []
+        },
+        {
+            "id": "BLESSING",
+            "name": "ブレッシング",
+            "maxlv": 10,
+            "dependencies": []
+        },
+        {
+            "id": "MACE_MASTERY",
+            "name": "メイス修練",
+            "maxlv": 10,
+            "dependencies": []
+        },
+        {
+            "id": "HEALING_LIGHT",
+            "name": "癒やしの光",
+            "maxlv": 10,
+            "dependencies": [["HEAL",5]]
+        },
+        {
+            "id": "INCREASING_AGILITY",
+            "name": "速度増加",
+            "maxlv": 10,
+            "dependencies": [["BLESSING",5]]
+        },
+        {
+            "id": "SIGNAM_CRUCIS",
+            "name": "シグナムクルシス",
+            "maxlv": 10,
+            "dependencies": []
+        },
+        {
+            "id": "LIGHT_BLESSING",
+            "name": "ライトブレッシング",
+            "maxlv": 10,
+            "dependencies": []
+        },
+        {
+            "id": "HOLY_LIGHT",
+            "name": "ホーリーライト",
+            "maxlv": 10,
+            "dependencies": []
+        },
+        {
+            "id": "KIRIE_ELESON",
+            "name": "キリエエレイソン",
+            "maxlv": 10,
+            "dependencies": []
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
